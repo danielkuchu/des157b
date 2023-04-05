@@ -15,3 +15,21 @@ list-style: none;
 text-align: left;
 
 }
+
+header {
+
+margin: auto;
+padding: auto;
+width: 1200px;
+
+}
+
+body {
+
+    background-image: url(images/background1.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    width: 1200px;
+    margin: auto;
+
+}
