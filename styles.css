@@ -13,7 +13,7 @@ h1 {
     justify-content: center;
   align-items: center;
   filter: url("#flyOn");
-  animation: wavemover 10s infinite alternate linear;
+  animation: wavemover 20s infinite alternate linear;
   font-family: 'Rubik Mono One', sans-serif;
   margin-bottom: -100px;
   }
