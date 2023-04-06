@@ -15,67 +15,92 @@
 <body>
 
     <header>
-        <h1>DES 157b Portal</h1>
-        <nav>
+        <div class="container">
+            <input type="checkbox" class="checkbox" id="checkbox">
+            <label class="switch" for="checkbox">
+              <span class="slider"></span>
+            </label>
+          </div>
 
-            <ul>
-                <li href="#"><strong>ministudios</strong>
-                    <ul>
-                        <li href="#">blockbuster video</li>
-                        <li href="#">check yourself</li>
-                        <li href="#">library liberty</li>
-                    </ul>
-                </li>
-                <li href="#"><strong>toolkit</strong>
+          <h1 contenteditable> Daniel Ramos</h1>
 
-                    <ul>
-                        <li href="#">touch events</li>
-                        <li href="#">lazy loader</li>
-                        <li href="#">arrow functions</li>
-                    </ul>
+          <svg>
+            <defs>
+              <filter id="flyOn">
+                <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="3"/>
+            <feDisplacementMap in="SourceGraphic" in2="noise" scale="15" />
+              </filter>
+            </defs>
+          </svg>
 
-                </li>
-                <li href="#"><strong>research</strong>
+<div id="navbar">
+        <div class="dropdown1">
+            <button class="miniStudiosbtn">ministudios</button>
+            <div class="miniStudiocontent">
+                <a href="#">blockbuster video</a>
+                <a href="#">check yourself</a>
+                <a href="#">library liberty</a>
+            </div>
+        </div>
 
-                    <ul>
-                        <li href="#">selfie seal</li>
-                        <li href="#">interviews</li>
-                        <li href="#">annotated bibliography</li>
-                        <li href="#">comparative analysis</li>
-                        <li href="#">visual research</li>
-                        <li href="#">feasibility report</li>
-                    </ul>
+        <div class="dropdown2">
+            <button class="toolkitbtn">toolkit</button>
+            <div class="toolkitcontent">
+                <a href="#">touch events</a>
+                <a href="#">lazy loader</a>
+                <a href="#">arrow functions</a>
+            </div>
+        </div>
 
-                </li>
-                <li href="#"><strong>development</strong>
+        <div class="dropdown3">
+            <button class="resbtn">research</button>
+            <div class="rescontent">
+                <a href="#">selfie seal</a>
+                <a href="#">interviews</a>
+                <a href="#">annotated bibliography</a>
+                <a href="#">comparative analysis</a>
+                <a href="#">visual research</a>
+                <a href="#">feasibility report</a>
+            </div>
+        </div>
 
-                    <ul>
-                        <li href="#">topic choice</li>
-                        <li href="#">project brief</li>
-                        <li href="#">storyboard</li>
-                        <li href="#">flows</li>
-                        <li href="#">interactive comp</li>
-                        <li href="#">version one</li>
-                        <li href="#">version two</li>
-                        <li href="#">user test</li>
-                        <li href="#">version three</li>
-                    </ul>
+        <div class="dropdown4">
+            <button class="devbtn">development</button>
+            <div class="devcontent">
+                <a href="#">topic choice</a>
+                <a href="#">project brief</a>
+                <a href="#">storyboard</a>
+                <a href="#">flows</a>
+                <a href="#">interactive comp</a>
+                <a href="#">version one</a>
+                <a href="#">version two</a>
+                <a href="#">user test</a>
+                <a href="#">version three</a>
 
-                </li>
-                <li href="#"><strong>capstone project</strong>
+            </div>
+        </div>
 
-                    <ul>
-                        <li href="#">case study</li>
-                        <li href="#">project</li>
-                    </ul>
+        <div class="dropdown5">
+            <button class="capbtn">capstone project</button>
+            <div class="capcontent">
+                <a href="#">case study</a>
+                <a href="#">project</a>
 
-                </li>
-            </ul>
-
-        </nav>
+            </div>
+        </div>
+</div>
     </header>
+    <main id="container">
+<img src="images/cloud.png" width="400" height="200" id="cloud"> 
+    </main>
+    <footer>
+        <div id="footerContent">
+                <h2><a href="&#114;&#097;&#109;&#111;&#115;&#100;&#097;&#110;&#105;&#101;&#108;&#051;&#050;&#049;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;">contact me</a</h2>
+            <h2>html validated</h2>
+            <h2>css normalized</h2>
+        </div>
+    </footer>
 
-    
 </body>
 
 </html>

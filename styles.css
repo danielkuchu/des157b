@@ -1,35 +1,372 @@
-nav ul {
+#navbar {
 
-display: flex;
-text-align: center;
-list-style: none;
+background-color: #04AA6D;
+width: 1126px;
+margin: auto;
+
 
 }
 
+h1 {
+    color: #a1a1a1;
+    font-size: 100px;
+    justify-content: center;
+  align-items: center;
+  filter: url("#flyOn");
+  animation: wavemover 10s infinite alternate linear;
+  font-family: 'Rubik Mono One', sans-serif;
+  margin-bottom: -100px;
+  }
+  
+  @keyframes wavemover {
+    100% {
+      padding-left: 300px;
+      transform: translateX(-100px);
+    }
+  }
 
-nav ul li ul {
+/* Remove this container when use*/
+.component-title {
+    width: 100%;
+    position: absolute;
+    z-index: 999;
+    top: 30px;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #888;
+    text-align: center;
+  }
+  
+  /* The switch - the box around the slider */
+  .container {
+    width: 51px;
+    height: 31px;
+    position: relative;
+    float: right;
+    z-index: 50;
+  }
+  
+  /* Hide default HTML checkbox */
+  .checkbox {
+    opacity: 0;
+    width: 0;
+    height: 0;
+    position: absolute;
+  }
+  
+  .switch {
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-color: #8d8dff;
+    border-radius: 16px;
+    cursor: pointer;
+    transition: all 0.2s ease-out;
+  }
+  
+  /* The slider */
+  .slider {
+    width: 27px;
+    height: 27px;
+    position: absolute;
+    left: calc(50% - 27px/2 - 10px);
+    top: calc(50% - 27px/2);
+    border-radius: 50%;
+    background: #FFFFFF;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.15), 0px 3px 1px rgba(0, 0, 0, 0.06);
+    transition: all 0.2s ease-out;
+    cursor: pointer;
+  }
+  
+  .checkbox:checked + .switch {
+    background-color: #152e54;
+  }
+  
+  .checkbox:checked + .switch .slider {
+    left: calc(50% - 27px/2 + 10px);
+    top: calc(50% - 27px/2);
+  }
+  
 
-flex-direction: column;
-position: relative;
-list-style: none;
-text-align: left;
-
-}
 
 header {
-
 margin: auto;
-padding: auto;
 width: 1200px;
+text-align: center;
+background-color: #04AA6D;
 
+}
+#container {
+
+    position: relative;
+height: 800px;
+background-image: url(images/background1.png);
+background-repeat: no-repeat;
+background-size: contain;
+background-position-x: center;
+margin: auto;
+
+}
+
+#cloud {
+
+    position: absolute;
+    left: 20%;
+animation: move 20s infinite;
+
+}
+
+@keyframes move {
+
+0%{transform: translateX(0px);}
+50%{transform: translateX(1000px);}
+100% {transform: translateX(0px);}
+    
 }
 
 body {
 
-    background-image: url(images/background1.png);
-    background-repeat: no-repeat;
-    background-size: auto;
-    width: 1200px;
-    margin: auto;
+    background-color: #04AA6D;
+    margin-top: 100px;
 
 }
+
+
+footer {
+
+    background-color: #04AA6D;
+    margin: auto;
+    text-align: center;
+}
+
+footer h2{
+
+margin-right: 100px;
+
+}
+
+footer ul li{
+
+    flex-direction: column;
+    list-style: none;
+
+}
+
+footer a {
+
+    text-decoration: none;
+    color: black;
+
+}
+
+footer:last-of-type {
+
+margin: 0%;
+
+}
+
+#footerContent {
+
+    display: flex;
+    margin: auto;
+    transform: translateX(300px);
+
+}
+
+#contact {
+
+flex-direction: column;
+
+}
+
+button {
+
+margin: 0;
+
+}
+
+.miniStudiosbtn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+  
+  .dropdown1 {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .miniStudiocontent {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .miniStudiocontent a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .miniStudiocontent a:hover {background-color: #ddd;}
+  
+  .dropdown1:hover .miniStudiocontent {display: block;}
+  
+  .dropdown1:hover .miniStudiosbtn {background-color: #3e8e41;}
+
+  /* Button 2*/
+
+  .toolkitbtn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+  
+  .dropdown2 {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .toolkitcontent {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .toolkitcontent a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .toolkitcontent a:hover {background-color: #ddd;}
+  
+  .dropdown2:hover .toolkitcontent {display: block;}
+  
+  .dropdown2:hover .toolkitbtn {background-color: #3e8e41;}
+
+    /* Button 3*/
+
+    .resbtn {
+        background-color: #04AA6D;
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+      }
+      
+      .dropdown3 {
+        position: relative;
+        display: inline-block;
+      }
+      
+      .rescontent {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+      
+      .rescontent a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+      
+      .rescontent a:hover {background-color: #ddd;}
+      
+      .dropdown3:hover .rescontent {display: block;}
+      
+      .dropdown3:hover .resbtn {background-color: #3e8e41;}
+
+      /* Button 4*/
+
+    .devbtn {
+        background-color: #04AA6D;
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+      }
+      
+      .dropdown4 {
+        position: relative;
+        display: inline-block;
+      }
+      
+      .devcontent {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+      
+      .devcontent a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+      
+      .devcontent a:hover {background-color: #ddd;}
+      
+      .dropdown4:hover .devcontent {display: block;}
+      
+      .dropdown4:hover .devbtn {background-color: #3e8e41;}
+
+       /* Button 5*/
+
+    .capbtn {
+        background-color: #04AA6D;
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+      }
+      
+      .dropdown5 {
+        position: relative;
+        display: inline-block;
+      }
+      
+      .capcontent {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+      
+      .capcontent a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+      
+      .capcontent a:hover {background-color: #ddd;}
+      
+      .dropdown5:hover .capcontent {display: block;}
+      
+      .dropdown5:hover .capbtn {background-color: #3e8e41;}
