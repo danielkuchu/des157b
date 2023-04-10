@@ -1,14 +1,16 @@
 #navbar {
 
-background-color: #04AA6D;
+background-color: #00ffa2;
 width: 1126px;
+border-radius: 50px;
 margin: auto;
+z-index: 10;
 
 
 }
 
 h1 {
-    color: #a1a1a1;
+    color: #ffffff;
     font-size: 100px;
     justify-content: center;
   align-items: center;
@@ -96,9 +98,11 @@ header {
 margin: auto;
 width: 1200px;
 text-align: center;
-background-color: #04AA6D;
-
+background-color: #04aa6d00;
+z-index: 5;
+margin-bottom: 100px;
 }
+
 #container {
 
     position: relative;
@@ -108,77 +112,34 @@ background-repeat: no-repeat;
 background-size: contain;
 background-position-x: center;
 margin: auto;
+margin-bottom: 100px;
+z-index: -1;
 
 }
 
 #cloud {
-
     position: absolute;
-    left: 20%;
-animation: move 20s infinite;
+    bottom: 10%;
+    left: 10%;
+animation: move 40s infinite;
+z-index: 1;
 
 }
 
 @keyframes move {
 
 0%{transform: translateX(0px);}
-50%{transform: translateX(1000px);}
+50%{transform: translateX(600px);}
 100% {transform: translateX(0px);}
     
 }
 
 body {
 
-    background-color: #04AA6D;
-    margin-top: 100px;
-
-}
-
-
-footer {
-
-    background-color: #04AA6D;
-    margin: auto;
-    text-align: center;
-}
-
-footer h2{
-
-margin-right: 100px;
-
-}
-
-footer ul li{
-
-    flex-direction: column;
-    list-style: none;
-
-}
-
-footer a {
-
-    text-decoration: none;
-    color: black;
-
-}
-
-footer:last-of-type {
-
-margin: 0%;
-
-}
-
-#footerContent {
-
-    display: flex;
-    margin: auto;
-    transform: translateX(300px);
-
-}
-
-#contact {
-
-flex-direction: column;
+  background-image: url(images/grass.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center;
 
 }
 
@@ -189,11 +150,12 @@ margin: 0;
 }
 
 .miniStudiosbtn {
-    background-color: #04AA6D;
-    color: white;
+    background-color: #04aa6d00;
+    color: rgb(26, 107, 38);
     padding: 16px;
-    font-size: 16px;
+    font-size: 20px;
     border: none;
+    font-family: 'Roboto', sans-serif;
   }
   
   .dropdown1 {
@@ -226,11 +188,12 @@ margin: 0;
   /* Button 2*/
 
   .toolkitbtn {
-    background-color: #04AA6D;
-    color: white;
+    background-color: #04aa6d00;
+    color: rgb(26, 107, 38);
     padding: 16px;
-    font-size: 16px;
+    font-size: 20px;
     border: none;
+    font-family: 'Roboto', sans-serif;
   }
   
   .dropdown2 {
@@ -263,11 +226,12 @@ margin: 0;
     /* Button 3*/
 
     .resbtn {
-        background-color: #04AA6D;
-        color: white;
+        background-color: #04aa6d00;
+        color: rgb(26, 107, 38);
         padding: 16px;
-        font-size: 16px;
+        font-size: 20px;
         border: none;
+        font-family: 'Roboto', sans-serif;
       }
       
       .dropdown3 {
@@ -300,11 +264,12 @@ margin: 0;
       /* Button 4*/
 
     .devbtn {
-        background-color: #04AA6D;
-        color: white;
+        background-color: #04aa6d00;
+        color: rgb(26, 107, 38);
         padding: 16px;
-        font-size: 16px;
+        font-size: 20px;
         border: none;
+        font-family: 'Roboto', sans-serif;
       }
       
       .dropdown4 {
@@ -337,11 +302,12 @@ margin: 0;
        /* Button 5*/
 
     .capbtn {
-        background-color: #04AA6D;
-        color: white;
+        background-color: #04aa6d00;
+        color: rgb(26, 107, 38);
         padding: 16px;
-        font-size: 16px;
+        font-size: 20px;
         border: none;
+        font-family: 'Roboto', sans-serif;
       }
       
       .dropdown5 {
@@ -370,3 +336,40 @@ margin: 0;
       .dropdown5:hover .capcontent {display: block;}
       
       .dropdown5:hover .capbtn {background-color: #3e8e41;}
+
+      
+footer {
+
+  width: 1126px;
+  background-color: #04aa6d00;
+  margin: auto;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 100px;
+  
+}
+
+footer h2{
+
+margin: auto;
+padding: 25px;
+background-color: #00ffa2;
+border-radius: 50px;
+color: #295d2a;
+
+}
+
+footer a {
+
+  text-decoration: none;
+  color: #295d2a;
+
+}
+
+footer h2 a:hover {
+
+color: #6eb87f;
+cursor: pointer;
+
+}
