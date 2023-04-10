@@ -17,13 +17,8 @@ body.style.backgroundImage = "url('images/grass2.png')";
 main.style.backgroundImage= "url('images/background2.png')";
 darkButton.className="hide";
 lightButton.className="show";
-navBar.style.color="red";
-
-if (backgroundImage == "url('images/grass2.png')") {
-
-    cloudg
-
-}
+cloud.src="images/darkCloud.png";
+// navBar.style.color="red";
 
 });
 
@@ -33,6 +28,7 @@ lightButton.addEventListener("click", function(){
     main.style.backgroundImage= "url('images/background1.png')";
     darkButton.className="show";
     lightButton.className="hide";
+    cloud.src="images/cloud.png";
     
     
     });
