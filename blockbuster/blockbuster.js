@@ -3,21 +3,24 @@
     "use strict";
     console.log("JS up and running");
     
-    const pianoButton = document.getElementById("pianoButton");
-    const pausePianoButton = document.getElementById("pausePianoButton");
+    const pianoButton = document.getElementById("pianoguy");
+    const notes = document.getElementById("notes");
     let piano = new Audio("audio/piano.mp3");
     piano.volume = 1.0;
     
-    pianoButton.addEventListener("click", function(){
+    pianoButton.addEventListener("mouseover", function(){
     
     piano.play();
+    notes.className="show";
     
     });
     
-    pausePianoButton.addEventListener("click", function(){
+    pianoButton.addEventListener("mouseout", function(){
     
     piano.pause();
+    notes.className="hide";
     
     });
+
     
     })();

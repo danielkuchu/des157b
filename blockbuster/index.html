@@ -9,6 +9,10 @@
 
     <!-- CSS -->
     <link href="styles.css" rel="stylesheet">
+
+        <!--  Normalized CSS  -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+
     <title>BlockBuster Video!</title>
 
 </head>
@@ -17,8 +21,15 @@
     <video id="myVideo" controls muted loop autoplay playsinline>
         <source src="media/myVideo.mp4" type="video/mp4">
     </video>
-    <button id="pianoButton">Play Piano</button>
-    <button id="pausePianoButton">Pause Piano</button>
+
+    <div class="overlay">
+        <h2>It's not the same without your head on my shoulders</h2>
+      </div>
+
+      <div>
+    <img src="images/notes.png" width="55" height="77" alt="music notes icon" class="hide" id="notes">
+      <img src="images/Asset 1.png" width="120" height="100" alt="play/pause piano button" id="pianoguy">
+    </div>
     
 </body>
 </html>
