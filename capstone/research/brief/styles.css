@@ -3,6 +3,8 @@
 margin: auto;
 width: 800px;
 padding-top: 50px;
+box-shadow: 0 0 15px 1px rgb(184, 184, 184);
+border-radius: 20px;
 
 }
 
