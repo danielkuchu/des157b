@@ -7,12 +7,25 @@
     <title>Library Liberty</title>
 </head>
 <body>
-    <script src="anime.min.js"></script>
+    <div id="emoji">🚀</div>
     <svg id="demo-svg" width="1000" height="500">
 
         <path stroke="red" fill="none" d="M 506 71 L 572 128 L 432 244 L 810 421 L 545 250 L 675 94 L 442 21 Z"></path>
 
     </svg>
+<script src="anime.min.js"></script>
+<script>
+    let path = anime.path("#demo-svg path");
+    anime ({
 
+targets: "#emoji",
+translateX: path("x"),
+translateY: path("y"),
+easing: "linear",
+duration: 5000,
+loop: true
+
+    });
+</script>
 </body>
 </html>
