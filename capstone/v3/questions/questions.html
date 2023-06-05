@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- JS -->
+  <script src="questions.js" defer></script>
+  <!-- CSS -->
+  <link href="styles.css" rel="stylesheet">
+  <!--  Normalized CSS  -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+
+  <!--  Google Fonts  -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Oswald:wght@400;600&family=Poppins:wght@400;600;700&display=swap"
+    rel="stylesheet">
+
+  <title>Seal Questionaire</title>
+</head>
+
+<body>
+
+  <header>
+
+    <h2>Instructions</h2>
+    <ol>
+      <li>Look at each symbol</li>
+      <li>Tell us about your experience in Davis</li>
+      <li>Compare experiences with other UC Davis students and view the artists' intention as well</li>
+    </ol>
+
+  </header>
+
+  <!-- Question 1 -->
+
+  <section id="q1" class="hide">
+
+    <form>
+      <img src="../images/question1.jpg" alt="Photo of the seal" class="q_img show">
+      <h3>I feel accepted and represented within the Davis community</h3>
+
+      <!-- Radio buttons -->
+      <div class="radio">
+        <input type="radio" name="options" value="option1">Strongly Disagree
+      </div>
+
+      <div class="radio">
+        <input type="radio" name="options" value="option2">Disagree
+      </div>
+
+      <div class="radio">
+        <input type="radio" name="options" value="option3">Neutral
+      </div>
+
+      <div class="radio">
+        <input type="radio" name="options" value="option4">Agree
+      </div>
+
+      <div class="radio">
+        <input type="radio" name="options" value="option5">Strongly Agree
+      </div>
+
+      <!-- Submit button -->
+      <div class="q_button">
+        <button type="submit" id="submitButton" disabled class="submitButton">Submit</button>
+      </div>
+
+      <div class="home">
+        <a href="../index.html">Back to Home</a>
+      </div>
+
+    </form>
+
+
+  </section>
+
+  <section id="response1" class="hide">
+
+    <p>60% of students thought hbkjafkja</p>
+    <progress id="file" value="60" max="100"> 60% </progress>
+    <p>30% of students thought hbkjafkja</p>
+    <progress id="file" value="30" max="100"> 30% </progress>
+    <p>10% of students thought hbkjafkja</p>
+    <progress id="file" value="10" max="100"> 10% </progress>
+
+  </section>
+
+  <section id="susan1" class="hide">
+    <img src="images/close.png" width="30" height="30" id="closeOverlay1">
+    <h2>Susan Shelton</h2>
+    <h3>Seal Artist</h3>
+    <div id="susanContent1">
+      <div>
+        <img src="images/quoteTop.png" width="35" height="29">
+
+        <p>This panel portrays Davis as what we know is a wonderful place to raise our children. Our investment in our
+          children reflects our Vision, Aspiration, and Optimism for the future.</p>
+        <p>A child looks from the outside, symbolizing excluded children. Patwin and Japanese families were forcefully
+          relocated, and migrant farm worker children struggle to participate in our community.</p>
+        <img src="images/quoteBot.png" width="35" height="29">
+      </div>
+      <img src="images/susanpic.png" width="350" height="373" alt="Susan Picture" id="susanpic">
+    </div>
+  </section>
+
+  <!-- Question 2 -->
+
+  <section id="q2" class="hide">
+
+    <img src="images/q2image.png" width="160" height="183" alt="Question 2 Image">
+
+    <form>
+      <h3>Q2. Among these plants and animals, choose which you think are native to Davis, CA.</h3>
+      <input type="checkbox" name="wildlife" value="ducks"> Ducks<br>
+      <input type="checkbox" name="wildlife" value="grass"> Grass<br>
+      <input type="checkbox" name="wildlife" value="chickens"> Chickens<br>
+      <input type="checkbox" name="wildlife" value="lilypads"> Lily pads<br>
+      <input type="checkbox" name="wildlife" value="reeds"> Reeds<br>
+    </form>
+
+    <div class="q_button">
+      <button type="submit" id="submitButton" disabled class="submitButton">Submit</button>
+    </div>
+  </section>
+
+  <section id="response2" class="show">
+<img src="images/q2image.png" width="160" height="183">
+<img src="images/response2.png" width="375" height="320">
+
+  <div class="twobuttons">
+    <button type="submit" id="learnmore">Learn More</button>
+    <button type="submit" id="nextButton">Next</button>
+  </div>  
+
+
+  </section>
+
+  <section id="susan2" class="hide">
+
+    <img src="images/Susan Popup 2.png" width="375" height="406">
+    <!-- <img src="images/close.png" width="30" height="30" id="closeOverlay1">
+    <h2>Susan Shelton</h2>
+    <h3>Seal Artist</h3>
+    <div id="susanContent1">
+      <div>
+        <img src="images/quoteTop.png" width="35" height="29">
+
+        <p>This panel portrays Davis as what we know is a wonderful place to raise our children. Our investment in our
+          children reflects our Vision, Aspiration, and Optimism for the future.</p>
+        <p>A child looks from the outside, symbolizing excluded children. Patwin and Japanese families were forcefully
+          relocated, and migrant farm worker children struggle to participate in our community.</p>
+        <img src="images/quoteBot.png" width="35" height="29">
+      </div>
+      <img src="images/susanpic.png" width="350" height="373" alt="Susan Picture" id="susanpic">
+    </div> -->
+  </section>
+
+
+  <!-- Question 3 -->
+
+  <section id="q3" class="hide">
+
+    <form>
+      <img src="images/question3.jpg" alt="Photo of the seal" class="q_img show">
+      <h3>Q3. There’s nothing to do in Davis. We’re in the middle of nowhere.</h3>
+
+      <!-- Radio buttons -->
+      <div class="radio">
+        <input type="radio" name="options" value="option1">Strongly Disagree
+      </div>
+
+      <div class="radio">
+        <input type="radio" name="options" value="option2">Disagree
+      </div>
+
+      <div class="radio">
+        <input type="radio" name="options" value="option3">Neutral
+      </div>
+
+      <div class="radio">
+        <input type="radio" name="options" value="option4">Agree
+      </div>
+
+      <div class="radio">
+        <input type="radio" name="options" value="option5">Strongly Agree
+      </div>
+
+      <!-- Submit button -->
+      <div class="q_button">
+        <button type="submit" id="submitButton" disabled class="submitButton">Submit</button>
+      </div>
+
+      <div class="home">
+        <a href="../index.html">Back to Home</a>
+      </div>
+
+    </form>
+
+  </section>
+
+  <progress id="quizProg" value="33.33" max="100"> 10% </progress>
+</body>
+
+</html>
